@@ -1,14 +1,10 @@
-
-$CloseButton: #f25056;
-$SmallButton: #fac536;
-$MinimizeButton: #39ea49;
-
 @font-face {
   font-family: 'terminal';
-  src: local('terminal'), url(./fonts/IranianSans.ttf) format('ttf');
+  src: local('terminal'), url(../fonts/IranianSans.ttf) format('ttf');
 }
 body{
   font-family: terminal;
+  overflow: hidden;
 }
 @media screen and (max-width: 780px) {
   .book{
@@ -32,106 +28,33 @@ body{
     width: auto !important;
   }
 }
+.main-container{
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
 .book{
-  height: 90vh;
-  width: 40vw;
+  height: 100vh;
+  width: 50vw;
   min-width: 370px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   background: #ffffff;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   box-shadow: 3px 3px 3px rgba(53, 53, 53, 0.4) ;
   overflow: hidden;
   .book-light{
-    height: 90vh;
+    height: 100vh;
     min-width: 370px;
     position: absolute;
     background: #ffffff;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     box-shadow: -3px -3px 3px rgba(255, 255, 255, 0.4) ;
     overflow-y: auto;
     overflow-x: hidden;
-    .navbar{
-      height: 40px;
-      display: flex;
-      flex-direction: row;
-      justify-content: stretch;
-      align-items: center;
-      background-color: rgb(223, 223, 223);
-      .close{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        background-color: $CloseButton  ;
-        margin-right: 5px;
-        margin-left: 5px;
-        z-index: 1;
-        img{
-          width: 7px;
-          height: 7px;
-        }
-      }
-      .minimize{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        background-color: $MinimizeButton;
-        margin-right: 5px;
-        z-index: 1;
-        img{
-          width: 7px;
-          height: 7px;
-        }
-      }
-      .small{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        background-color: $SmallButton;
-        margin-right: 5px;
-        z-index: 1;
-        img{
-          width: 7px;
-          height: 7px;
-        }
-      }
-      .text-box{
-        flex: 1;
-        height: 25px;
-        display: flex;
-        min-width: 230px;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        .title{
-          background: #fff;
-          display: inline-block;
-          width: 60%;
-          border-radius: 4px;
-          padding: 6px 14px 4px;
-          margin-left: 10px;
-          min-width: 200px;
-          vertical-align: middle;
-          .http{
-            color: #39ea49;
-          }
-        }
-      }
-    }
   }
   .book-text{
     display: flex;
@@ -139,7 +62,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 40vw;
+    width: 50vw;
     padding-left: 1px;
     padding-top: 7px;
     z-index: 1;
@@ -235,8 +158,8 @@ body{
   }
 }
 .terminal{
-  height: 90vh;
-  width: 40vw;
+  height: 100vh;
+  width: 50vw;
   min-width: 370px;
   font-family: terminal;
   display: flex;
@@ -244,86 +167,11 @@ body{
   justify-content: flex-start;
   align-items: center;
   background: #333333;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   box-shadow: 3px 3px 3px rgba(53, 53, 53, 0.4) ;
   overflow: hidden;
-  .terminal-light{
-    height: 90vh;
-    min-width: 370px;
-    position: absolute;
-    background: #333333;
-    border-radius: 5px;
-    box-shadow: -3px -3px 3px rgba(255, 255, 255, 0.4) ;
-    overflow: hidden;
-    .navbar{
-      height: 40px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      font-family: sans-serif;
-      align-items: center;
-      background-color: rgb(223, 223, 223);
-      .close{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        background-color: $CloseButton  ;
-        margin-right: 5px;
-        margin-left: 5px;
-        z-index: 1;
-        img{
-          width: 7px;
-          height: 7px;
-        }
-      }
-      .minimize{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        background-color: $MinimizeButton;
-        margin-right: 5px;
-        z-index: 1;
-        img{
-          width: 7px;
-          height: 7px;
-        }
-      }
-      .small{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 15px;
-        height: 15px;
-        border-radius: 15px;
-        background-color: $SmallButton;
-        margin-right: 5px;
-        z-index: 1;
-        img{
-          width: 7px;
-          height: 7px;
-        }
-      }
-      .text-box{
-        flex: 1;
-        height: 25px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-  }
   .terminal-text{
-    width: 40vw;
+    width: 50vw;
     min-width: 370px;
     padding-left: 1px;
     padding-top: 7px;

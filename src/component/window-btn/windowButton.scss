@@ -1,0 +1,53 @@
+$CloseButton: #f25056;
+$SmallButton: #fac536;
+$MinimizeButton: #39ea49;
+
+.close{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: $CloseButton  ;
+  margin-right: 5px;
+  margin-left: 5px;
+  z-index: 1;
+  img{
+    width: 7px;
+    height: 7px;
+  }
+}
+.minimize{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: $MinimizeButton;
+  margin-right: 5px;
+  z-index: 1;
+  img{
+    width: 7px;
+    height: 7px;
+  }
+}
+.small{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: $SmallButton;
+  margin-right: 5px;
+  z-index: 1;
+  img{
+    width: 7px;
+    height: 7px;
+  }
+}

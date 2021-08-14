@@ -1,13 +1,27 @@
 const initial = {
-
+  book: {
+    state: "minimize"
+  },
+  terminal: {
+    state: "minimize"
+  }
 }
 
 const rootReducer = (state = initial, action) => {
   switch (action.type) {
-    case 'NAME_TO_HEADER':
+    case 'RESIZE_BOOK':
       return {
         ...state,
-        name: action.name
+        book: {
+          state: action.book
+        }
+      }
+    case 'RESIZE_TERMINAL':
+      return {
+        ...state,
+        terminal: {
+          state: action.terminal
+        }
       }
     default:
       return state
