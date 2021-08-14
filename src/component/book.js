@@ -33,7 +33,7 @@ function Book () {
             <div><span className='subtitle'>Front-end Developer</span></div>
             <div><span className='info'>February 25, 1999</span></div>
             <div><span className='info'>Andishe St., Beheshti St., Tehran, I.R. Iran</span></div>
-            <div><span className='info'>+98 (901) 749 9608</span></div>
+            <div><span className='info'>+98 (912) 956 8749</span></div>
             <div>
               <a href='mailto:saber.pourrahimi.1999@gmail.com'>
                 <img src={gmail} alt="gmail" />
