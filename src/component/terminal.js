@@ -1,9 +1,9 @@
+import { Resizable } from 're-resizable'
 import React, { useState } from 'react'
 import Draggable from 'react-draggable'
 import { useSelector } from 'react-redux'
 import Typewriter from 'typewriter-effect'
 import Navbar from './nav-bar/navbar'
-import Resizer from './resizer/resizer'
 
 function Terminal () {
 
@@ -18,8 +18,10 @@ function Terminal () {
 
   return (
     <Draggable handle="span" bounds="parent">
-    <div className="main-container" style={{justifyContent: state === "small" && "flex-end", alignItems: state === "small" && "flex-end"}}>
-      <Resizer>
+      <Resizable className="resiz" minWidth={350} defaultSize={{
+        width:600,
+        height:800,
+      }}>
       <span>{state !== "close" && (<Navbar type="RESIZE_TERMINAL" />)}</span>
       <div className='terminal' style={{display: state !== "minimize" && "none"}}>
         <div className='terminal-text'>
@@ -47,8 +49,7 @@ function Terminal () {
           </div>
         </div>
       </div>
-    </Resizer>
-    </div>
+    </Resizable>
     </Draggable>
   )
 }

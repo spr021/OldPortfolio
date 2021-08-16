@@ -13,24 +13,22 @@ body{
   .terminal{
     margin-bottom: 20px;
   }
-}
-.main-container{
-  background-color: #16c916;
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 400px;
-  min-height: 200px;
+  .resiz{
+    width: 200px !important;
+    height: 300px !important;
+  }
 }
 .book{
   display: flex;
+  max-height: calc(100% - 40px);
+  box-sizing: border-box;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   background: #ffffff;
   border-radius: 0 0 5px 5px;
   box-shadow: 3px 3px 3px rgba(53, 53, 53, 0.4) ;
-  overflow: hidden;
+  overflow-x: hidden;
   .book-text{
     display: flex;
     min-width: 370px;
@@ -133,11 +131,13 @@ body{
 }
 .terminal{
   font-family: terminal;
-  height: 300px;
+  box-sizing: border-box;
+  max-height: calc(100% - 40px);
+  min-height: calc(100% - 40px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   background: #333333;
   border-radius: 0 0 5px 5px;
   box-shadow: 3px 3px 3px rgba(53, 53, 53, 0.4) ;

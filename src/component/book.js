@@ -10,7 +10,7 @@ import Button from '@material-ui/core/Button'
 import Navbar from './nav-bar/navbar'
 import { useSelector } from 'react-redux'
 import Draggable from 'react-draggable'
-import Resizer from './resizer/resizer'
+import { Resizable } from 're-resizable'
 
 function Book () {
 
@@ -27,8 +27,10 @@ function Book () {
 
   return (
     <Draggable handle="span" bounds="parent">
-        <div className="main-container" style={{justifyContent: state === "small" && "flex-end", alignItems: state === "small" && "flex-end"}}>
-        <Resizer>
+      <Resizable className="resiz" minWidth={350} defaultSize={{
+        width:600,
+        height:800,
+      }}>
           <span>{state !== "close" && (<Navbar type="RESIZE_BOOK" />)}</span>
           <div className='book' style={{display: state !== "minimize" && "none"}}>
               <div className='book-text'>
@@ -71,9 +73,9 @@ function Book () {
                   </div>
                 </div>
               </div>
-            </div>
-          </Resizer>
+            {/* </div> */}
         </div>
+        </Resizable>
     </Draggable>
   )
 }
