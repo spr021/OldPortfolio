@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Resume/static/css/main.a8169b72.chunk.css",
-    "main.js": "/Resume/static/js/main.c6ffc2bc.chunk.js",
-    "main.js.map": "/Resume/static/js/main.c6ffc2bc.chunk.js.map",
-    "runtime-main.js": "/Resume/static/js/runtime-main.04142021.js",
-    "runtime-main.js.map": "/Resume/static/js/runtime-main.04142021.js.map",
-    "static/js/2.888c60b7.chunk.js": "/Resume/static/js/2.888c60b7.chunk.js",
-    "static/js/2.888c60b7.chunk.js.map": "/Resume/static/js/2.888c60b7.chunk.js.map",
+    "main.css": "/Resume/static/css/main.7d756310.chunk.css",
+    "main.js": "/Resume/static/js/main.5b80d490.chunk.js",
+    "main.js.map": "/Resume/static/js/main.5b80d490.chunk.js.map",
+    "runtime-main.js": "/Resume/static/js/runtime-main.6aaeef75.js",
+    "runtime-main.js.map": "/Resume/static/js/runtime-main.6aaeef75.js.map",
+    "static/js/2.df46b211.chunk.js": "/Resume/static/js/2.df46b211.chunk.js",
+    "static/js/2.df46b211.chunk.js.map": "/Resume/static/js/2.df46b211.chunk.js.map",
     "index.html": "/Resume/index.html",
-    "precache-manifest.3827ec52a76a823dd5656993d22b757d.js": "/Resume/precache-manifest.3827ec52a76a823dd5656993d22b757d.js",
+    "precache-manifest.4cc8b26dba766623c5984705c29f4d47.js": "/Resume/precache-manifest.4cc8b26dba766623c5984705c29f4d47.js",
     "service-worker.js": "/Resume/service-worker.js",
-    "static/css/main.a8169b72.chunk.css.map": "/Resume/static/css/main.a8169b72.chunk.css.map",
-    "static/js/2.888c60b7.chunk.js.LICENSE": "/Resume/static/js/2.888c60b7.chunk.js.LICENSE",
+    "static/css/main.7d756310.chunk.css.map": "/Resume/static/css/main.7d756310.chunk.css.map",
+    "static/js/2.df46b211.chunk.js.LICENSE.txt": "/Resume/static/js/2.df46b211.chunk.js.LICENSE.txt",
     "static/media/styles.scss": "/Resume/static/media/IranianSans.e59513c8.ttf",
     "static/media/card-challeng.png": "/Resume/static/media/card-challeng.c4a938c1.png",
     "static/media/gmail.png": "/Resume/static/media/gmail.a33f7f3a.png",
@@ -19,9 +19,9 @@
     "static/media/massenger.png": "/Resume/static/media/massenger.83ecaddc.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.04142021.js",
-    "static/js/2.888c60b7.chunk.js",
-    "static/css/main.a8169b72.chunk.css",
-    "static/js/main.c6ffc2bc.chunk.js"
+    "static/js/runtime-main.6aaeef75.js",
+    "static/js/2.df46b211.chunk.js",
+    "static/css/main.7d756310.chunk.css",
+    "static/js/main.5b80d490.chunk.js"
   ]
 }
